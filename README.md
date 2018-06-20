@@ -1,7 +1,8 @@
 GDB dashboard
 =============
 
-Modular visual interface for GDB in Python.
+Modular visual interface for GDB in Python. Modified by Keane to work with
+Python 2.6.
 
 This comes as a standalone single-file [`.gdbinit`][raw] which, among the other
 things, enables a configurable dashboard showing the most relevant information
