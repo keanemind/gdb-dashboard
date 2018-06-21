@@ -916,15 +916,15 @@ class Source(Dashboard.Module):
                 if R.ansi:
                     if self.highlighted:
                         line_format = ansi(number_format,
-                                           R.style_selected_1) + ' {0}'
+                                           R.style_selected_1) + ' {1}'
                     else:
-                        line_format = ansi(number_format + ' {0}',
+                        line_format = ansi(number_format + ' {1}',
                                            R.style_selected_1)
                 else:
                     # just show a plain text indicator
-                    line_format = number_format + '>{0}'
+                    line_format = number_format + '>{1}'
             else:
-                line_format = ansi(number_format, R.style_low) + ' {0}'
+                line_format = ansi(number_format, R.style_low) + ' {1}'
             out.append(line_format.format(number, line.rstrip('\n')))
         return out
 
